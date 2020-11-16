@@ -1,23 +1,54 @@
-header{
-    background-color: aliceblue;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 3rem;
+header {
+  background-color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 3rem;
+  font-family: 'Comfortaa', cursive;
+  background-color: black;
+  color: white;
 }
 
-nav{
-    width: 30%;
+nav {
+  width: 30%;
 }
 
-nav ul{
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    font-size: 1.5em;
+header h1 {
+  font-size: 3em;
 }
 
-nav ul a{
-    text-decoration: none;
-    color: black;
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  font-size: 1.6em;
+}
+
+nav a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  line-height: 0.4em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+
+nav a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav a:hover:after {
+  width: 100%;
+  left: 0;
 }
