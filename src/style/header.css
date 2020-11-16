@@ -1,0 +1,23 @@
+header{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 3rem;
+}
+
+nav{
+    width: 30%;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    font-size: 1.5em;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+}
