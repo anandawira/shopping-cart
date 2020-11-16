@@ -9,7 +9,7 @@ import image08 from './assets/image08.webp';
 import image09 from './assets/image09.webp';
 import image10 from './assets/image10.webp';
 
-const items = [
+const itemList = [
   { key: 1, name: 'Jordan Jumpman 2021 PF', price: 1649000, image: image01 },
   { key: 2, name: 'LeBron 18', price: 2999000, image: image02 },
   { key: 3, name: 'Zoom Freak 2', price: 1799000, image: image03 },
@@ -22,4 +22,4 @@ const items = [
   { key: 10, name: 'Air Jordan XXXV PF', price: 2599000, image: image10 },
 ];
 
-export default items;
+export default itemList;

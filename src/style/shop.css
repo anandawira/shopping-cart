@@ -1,0 +1,7 @@
+#shop {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: black;
+}
