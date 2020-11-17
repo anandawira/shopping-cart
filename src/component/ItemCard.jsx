@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/itemCard.css';
-import image01 from '../assets/image01.webp';
+import image01 from '../assets/images01.webp';
 
 export default function ItemCard() {
   return (
