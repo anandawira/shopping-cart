@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Header() {
   return (
     <header>
-      <h1>Shopping App</h1>
+      <h1>NSFW SHOP</h1>
       <nav>
         <ul>
           <li>

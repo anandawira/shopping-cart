@@ -7,6 +7,7 @@ header {
   font-family: 'Comfortaa', cursive;
   background-color: black;
   color: white;
+  z-index: 1;
 }
 
 nav {
@@ -15,6 +16,7 @@ nav {
 
 header h1 {
   font-size: 3em;
+  font-weight: 400;
 }
 
 nav ul {

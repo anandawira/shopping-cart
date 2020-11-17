@@ -1,12 +1,15 @@
 import React from 'react';
 import '../style/itemCard.css';
-import image01 from '../assets/images01.webp';
+import { Link } from 'react-router-dom';
 
-export default function ItemCard() {
+export default function ItemCard(props) {
   return (
-    <div className="itemCard">
-      <img src={image01} alt="gb" />
-      <p>Jordan Jumpman 2021 PF</p>
-    </div>
+    <Link to={`/shop/${props.link}`}>
+      <div className="itemCard">
+        <img src={props.item.image} alt="gb" />
+        <p className="itemName">{props.item.name}</p>
+        <p className="itemPrice">${props.item.price}.00</p>
+      </div>
+    </Link>
   );
 }
