@@ -3,8 +3,7 @@ import '../style/header.scss';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
 
-export default function Header() {
-  const [cart, setCart] = useState(0);
+export default function Header(props) {
   return (
     <header>
       <h1>NSFW SHOP</h1>
@@ -20,9 +19,7 @@ export default function Header() {
       </nav>
       <div id="cart">
         <FaShoppingCart id="cartIcon" />
-        <p id="cartCount" onClick={() => setCart(cart + 1)}>
-          {cart}
-        </p>
+        <p id="cartCount">{props.itemCount}</p>
       </div>
     </header>
   );
