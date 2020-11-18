@@ -6,7 +6,7 @@ header {
   padding: 0px 3rem;
   font-family: 'Comfortaa', cursive;
   background-color: black;
-  color: white;
+  color: #eaeaea;
   z-index: 1;
   h1 {
     font-size: 2.5em;
@@ -23,7 +23,7 @@ header {
     }
 
     a {
-      color: #fff;
+      color: #eaeaea;
       text-transform: uppercase;
       text-decoration: none;
       letter-spacing: 0.15em;
@@ -40,7 +40,7 @@ header {
         height: 2px;
         left: 50%;
         position: absolute;
-        background: #fff;
+        background: #eaeaea;
         transition: width 0.3s ease 0s, left 0.3s ease 0s;
         width: 0;
       }
@@ -50,19 +50,23 @@ header {
       }
     }
   }
-  #cart{
+  #cart {
     display: flex;
     align-items: flex-end;
-
-    #cartIcon{
+    transition: opacity 0.2s linear;
+    #cartIcon {
       font-size: 1.8em;
       margin-right: 0.2em;
     }
 
-    #cartCount{
+    #cartCount {
       font-size: 1.5em;
       display: inline-block;
       width: 2em;
+    }
+
+    &.dim {
+      opacity: 30%;
     }
   }
 }

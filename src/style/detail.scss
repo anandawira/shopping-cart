@@ -54,8 +54,13 @@
       bottom: 0;
       right: 0;
       font-size: 2em;
+      transition: opacity 0.2s linear;
 
       cursor: pointer;
+
+      &:hover{
+        opacity: 50%;
+      }
     }
   }
 }
