@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/header.scss';
 import { Link } from 'react-router-dom';
 import { FaShoppingCart } from 'react-icons/fa';
