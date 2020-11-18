@@ -1,8 +1,10 @@
-import React from 'react';
-import '../style/header.css';
+import React, { useState } from 'react';
+import '../style/header.scss';
 import { Link } from 'react-router-dom';
+import { FaShoppingCart } from 'react-icons/fa';
 
 export default function Header() {
+  const [cart, setCart] = useState(0);
   return (
     <header>
       <h1>NSFW SHOP</h1>
@@ -16,6 +18,12 @@ export default function Header() {
           </li>
         </ul>
       </nav>
+      <div id="cart">
+        <FaShoppingCart id="cartIcon" />
+        <p id="cartCount" onClick={() => setCart(cart + 1)}>
+          {cart}
+        </p>
+      </div>
     </header>
   );
 }

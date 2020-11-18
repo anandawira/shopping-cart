@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+.itemCard {
+  width: 20vw;
+  margin: 4vh auto;
+  font-family: 'Work Sans', sans-serif;
+  cursor: pointer;
+
+  img {
+    width: 20vw;
+    object-fit: cover;
+  }
+  p.itemName {
+    font-size: 2em;
+    color: rgb(191, 185, 177);
+    margin: 0.5em 0;
+  }
+  p.itemPrice {
+    font-size: 1.5em;
+    color: rgb(191, 185, 177);
+  }
+}

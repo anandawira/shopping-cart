@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Work+Sans&display=swap');
+
+#detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  font-family: 'Work Sans', sans-serif;
+
+  img#prodImg {
+    height: 50vh;
+    border: 1px solid black;
+  }
+
+  #info {
+    height: 50vh;
+    width: 40vh;
+    border: 1px solid black;
+    color: #eaeaea;
+    padding-left: 3em;
+  }
+
+  #addBtn {
+    background-color: #139546;
+    width: fit-content;
+    text-align: center;
+    padding: 0.5em 1em;
+    margin-top: 2em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 0.2em;
+    transition: background-color 0.3s linear;
+
+    &:hover {
+      /* opacity: 0%; */
+      background-color: #18bd59;
+    }
+
+    #cartIcon {
+      font-size: 1.5em;
+    }
+
+    p {
+      margin-left: 0.5em;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 1.2em;
+    }
+  }
+}

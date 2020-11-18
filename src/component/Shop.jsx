@@ -1,7 +1,7 @@
 import React from 'react';
 import ItemCard from './ItemCard';
 import items from '../items';
-import '../style/shop.css';
+import '../style/shop.scss';
 
 export default function Shop() {
   return (
