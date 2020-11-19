@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.544d79aa.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.4a2609e1.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.4a2609e1.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.2c057c56.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.2c057c56.js.map",
+    "static/js/2.adf9dbab.chunk.js": "/shopping-cart/static/js/2.adf9dbab.chunk.js",
+    "static/js/2.adf9dbab.chunk.js.map": "/shopping-cart/static/js/2.adf9dbab.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/main.544d79aa.chunk.css.map": "/shopping-cart/static/css/main.544d79aa.chunk.css.map",
+    "static/js/2.adf9dbab.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.adf9dbab.chunk.js.LICENSE.txt",
+    "static/media/home.scss": "/shopping-cart/static/media/9GAG_Flat_lay_1296x.67dbc12d.webp",
+    "static/media/images01.54bd4f4e.webp": "/shopping-cart/static/media/images01.54bd4f4e.webp",
+    "static/media/images02.3912e2fd.webp": "/shopping-cart/static/media/images02.3912e2fd.webp",
+    "static/media/images03.c529d53c.webp": "/shopping-cart/static/media/images03.c529d53c.webp",
+    "static/media/images04.d517b747.webp": "/shopping-cart/static/media/images04.d517b747.webp",
+    "static/media/images05.f2caca58.webp": "/shopping-cart/static/media/images05.f2caca58.webp",
+    "static/media/images06.12476156.webp": "/shopping-cart/static/media/images06.12476156.webp",
+    "static/media/images07.d6df31b3.webp": "/shopping-cart/static/media/images07.d6df31b3.webp",
+    "static/media/images08.1deff1af.webp": "/shopping-cart/static/media/images08.1deff1af.webp",
+    "static/media/images09.8bb724ea.webp": "/shopping-cart/static/media/images09.8bb724ea.webp",
+    "static/media/images10.0422b25f.webp": "/shopping-cart/static/media/images10.0422b25f.webp",
+    "static/media/images11.92ae1a4c.webp": "/shopping-cart/static/media/images11.92ae1a4c.webp",
+    "static/media/images14.fd199de9.webp": "/shopping-cart/static/media/images14.fd199de9.webp",
+    "static/media/images15.e82236d9.webp": "/shopping-cart/static/media/images15.e82236d9.webp",
+    "static/media/images16.5673c1f6.webp": "/shopping-cart/static/media/images16.5673c1f6.webp",
+    "static/media/images17.31e05ada.webp": "/shopping-cart/static/media/images17.31e05ada.webp",
+    "static/media/images18.08fa9409.webp": "/shopping-cart/static/media/images18.08fa9409.webp",
+    "static/media/images19.33040593.webp": "/shopping-cart/static/media/images19.33040593.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2c057c56.js",
+    "static/js/2.adf9dbab.chunk.js",
+    "static/css/main.544d79aa.chunk.css",
+    "static/js/main.4a2609e1.chunk.js"
+  ]
+}
