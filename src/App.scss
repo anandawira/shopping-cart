@@ -13,7 +13,6 @@ header {
   top: 0;
 }
 
-#detail,
-#checkout {
-  height: 85vh;
+#detail, #checkout{
+  min-height: 85vh;
 }
