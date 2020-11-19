@@ -4,6 +4,7 @@ import Home from './component/Home';
 import Shop from './component/Shop';
 import Detail from './component/Detail';
 import Checkout from './component/Checkout';
+import Complete from './component/Complete';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -43,6 +44,11 @@ function App() {
     }
   }
 
+  function resetCart() {
+    const newCartItems = new Map();
+    setCartItems(newCartItems);
+  }
+
   useEffect(() => {
     let newCount = 0;
     for (let value of cartItems.values()) {
@@ -70,9 +76,11 @@ function App() {
               cartItems={cartItems}
               incrementCart={incrementCart}
               decrementCart={decrementCart}
+              resetCart={resetCart}
             />
           )}
         />
+        <Route exact path="/complete" component={Complete} />
       </Switch>
     </Router>
   );

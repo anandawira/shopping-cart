@@ -1,11 +1,12 @@
 import React from 'react';
 import items from '../items';
 import ItemCard from './ItemCard';
+import Summary from './Summary';
 import '../style/checkout.scss';
 
 export default function Checkout(props) {
   const { cartItems } = props;
-  console.log(cartItems)
+  console.log(cartItems);
 
   return (
     <div id="checkout">
@@ -26,16 +27,11 @@ export default function Checkout(props) {
       </div>
       {cartItems.size === 0 ? (
         <div id="emptyCartInfo">
-          <p>
-            Your Cart is Empty
-            <br />
-            Let's Add Some Items
-          </p>
+          <p>Your Cart is Empty</p>
         </div>
       ) : (
-        ''
+        <Summary cartItems={cartItems} reset={props.resetCart}/>
       )}
-      {/* <div id='emptyCartInfo'><p>Your Cart is Empty<br/>Let's Add Some Items</p></div> */}
     </div>
   );
 }

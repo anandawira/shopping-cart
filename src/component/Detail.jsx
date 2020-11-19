@@ -12,8 +12,8 @@ export default function Detail(props) {
     <div id="detail">
       <img id="prodImg" src={item.image} alt="product" />
       <div id="info">
-        <h1>{item.name}</h1>
-        <p>${item.price}.00</p>
+        <h1 id="name">{item.name}</h1>
+        <p id="price">${item.price}.00</p>
         <div id="addBtn" onClick={() => props.addToCart(key, 1)}>
           <FaShoppingCart id="cartIcon" />
           <p>ADD TO CART</p>
