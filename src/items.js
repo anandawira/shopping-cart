@@ -9,8 +9,6 @@ import image08 from './assets/images08.webp';
 import image09 from './assets/images09.webp';
 import image10 from './assets/images10.webp';
 import image11 from './assets/images11.webp';
-import image12 from './assets/images12.webp';
-import image13 from './assets/images13.webp';
 import image14 from './assets/images14.webp';
 import image15 from './assets/images15.webp';
 import image16 from './assets/images16.webp';
@@ -66,16 +64,6 @@ const items = [
     image: image10,
   },
   { name: 'NSFW Tote Bag - Stacked', price: 29, image: image11 },
-  {
-    name: 'NSFW Crewneck Fleece Sweater - Strikethrough Black',
-    price: 66,
-    image: image12,
-  },
-  {
-    name: 'NSFW Crewneck Fleece - Strikethrough Grey',
-    price: 66,
-    image: image13,
-  },
   {
     name: 'NSFW Tee - Strikethrough Pink',
     price: 36,

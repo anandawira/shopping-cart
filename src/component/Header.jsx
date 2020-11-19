@@ -10,7 +10,6 @@ export default function Header(props) {
     if (props.itemCount == '0') {
       return;
     }
-    console.log('hook called');
     setIsDim(true);
     setTimeout(() => {
       setIsDim(false);
@@ -30,10 +29,12 @@ export default function Header(props) {
           </li>
         </ul>
       </nav>
-      <div id="cart" className={isDim ? 'dim' : ''}>
-        <FaShoppingCart id="cartIcon" />
-        <p id="cartCount">{props.itemCount}</p>
-      </div>
+      <Link to="/checkout">
+        <div id="cart" className={isDim ? 'dim' : ''}>
+          <FaShoppingCart id="cartIcon" />
+          <p id="cartCount">{props.itemCount}</p>
+        </div>
+      </Link>
     </header>
   );
 }

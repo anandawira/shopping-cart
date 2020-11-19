@@ -4,14 +4,16 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 header {
-  height: 10vh;
+  height: 15vh;
   position: sticky;
   top: 0;
 }
 
-#detail{
-  height: 90vh;
+#detail,
+#checkout {
+  height: 85vh;
 }

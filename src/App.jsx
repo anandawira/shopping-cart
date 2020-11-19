@@ -3,6 +3,7 @@ import Header from './component/Header';
 import Home from './component/Home';
 import Shop from './component/Shop';
 import Detail from './component/Detail';
+import Checkout from './component/Checkout';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -39,6 +40,11 @@ function App() {
           path="/shop/:id"
           render={(props) => <Detail {...props} addToCart={addToCart} />}
         ></Route>
+        <Route
+          exact
+          path="/checkout"
+          render={(props) => <Checkout {...props} cartItems={cartItems} />}
+        />
       </Switch>
     </Router>
   );

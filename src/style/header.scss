@@ -1,5 +1,4 @@
 header {
-  background-color: aliceblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -54,6 +53,7 @@ header {
     display: flex;
     align-items: flex-end;
     transition: opacity 0.2s linear;
+    color: #eaeaea;
     #cartIcon {
       font-size: 1.8em;
       margin-right: 0.2em;
@@ -68,5 +68,9 @@ header {
     &.dim {
       opacity: 30%;
     }
+  }
+
+  a{
+    text-decoration: none;
   }
 }
