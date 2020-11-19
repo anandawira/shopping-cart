@@ -5,17 +5,36 @@ import '../style/checkout.scss';
 
 export default function Checkout(props) {
   const { cartItems } = props;
-  console.log(cartItems);
+  console.log(cartItems)
+
   return (
     <div id="checkout">
       <div id="cartItems">
         {[...cartItems.keys()].map((key) => {
-          return <ItemCard item={items.get(key)} key={key} link={key}>
-              <div id="quantity">ahahahahaha</div>
-          </ItemCard>;
+          return (
+            <ItemCard
+              item={items.get(key)}
+              key={key}
+              link={key}
+              showModifier={true}
+              quantity={cartItems.get(key) || 0}
+              increment={props.incrementCart}
+              decrement={props.decrementCart}
+            />
+          );
         })}
       </div>
-      {cartItems.size===0 ? <div id='emptyCartInfo'><p>Your Cart is Empty<br/>Let's Add Some Items</p></div> : ''}
+      {cartItems.size === 0 ? (
+        <div id="emptyCartInfo">
+          <p>
+            Your Cart is Empty
+            <br />
+            Let's Add Some Items
+          </p>
+        </div>
+      ) : (
+        ''
+      )}
       {/* <div id='emptyCartInfo'><p>Your Cart is Empty<br/>Let's Add Some Items</p></div> */}
     </div>
   );

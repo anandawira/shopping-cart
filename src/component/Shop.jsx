@@ -7,7 +7,14 @@ export default function Shop() {
   return (
     <div id="shop">
       {[...items.keys()].map((key) => {
-        return <ItemCard item={items.get(key)} key={key} link={key} />;
+        return (
+          <ItemCard
+            item={items.get(key)}
+            key={key}
+            link={key}
+            modifier={false}
+          />
+        );
       })}
     </div>
   );

@@ -22,6 +22,27 @@ function App() {
     setCartItems(newCartItems);
   }
 
+  function incrementCart(key) {
+    addToCart(key, 1);
+  }
+
+  function decrementCart(key) {
+    const currentQty = cartItems.get(key) || 0;
+    if (currentQty > 1) {
+      const newQty = currentQty - 1;
+
+      const newCartItems = new Map(cartItems);
+      newCartItems.set(key, newQty);
+
+      setCartItems(newCartItems);
+    } else {
+      const newCartItems = new Map(cartItems);
+      newCartItems.delete(key);
+
+      setCartItems(newCartItems);
+    }
+  }
+
   useEffect(() => {
     let newCount = 0;
     for (let value of cartItems.values()) {
@@ -43,7 +64,14 @@ function App() {
         <Route
           exact
           path="/checkout"
-          render={(props) => <Checkout {...props} cartItems={cartItems} />}
+          render={(props) => (
+            <Checkout
+              {...props}
+              cartItems={cartItems}
+              incrementCart={incrementCart}
+              decrementCart={decrementCart}
+            />
+          )}
         />
       </Switch>
     </Router>
