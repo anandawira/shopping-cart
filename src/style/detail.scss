@@ -42,7 +42,6 @@
       user-select: none;
 
       &:hover {
-        /* opacity: 0%; */
         background-color: #18bd59;
       }
 
@@ -67,7 +66,7 @@
       cursor: pointer;
 
       &:hover {
-        opacity: 50%;
+        opacity: 0.5;
       }
     }
   }
