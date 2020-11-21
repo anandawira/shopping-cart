@@ -5,7 +5,7 @@ import Shop from './component/Shop';
 import Detail from './component/Detail';
 import Checkout from './component/Checkout';
 import Complete from './component/Complete';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 function App() {
@@ -58,7 +58,7 @@ function App() {
     console.log(cartItems);
   }, [cartItems]);
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <Header itemCount={itemCount} />
       <Switch>
         <Route exact path="/" component={Home} />
