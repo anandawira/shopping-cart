@@ -58,7 +58,7 @@ function App() {
     console.log(cartItems);
   }, [cartItems]);
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL + '/'}>
       <Header itemCount={itemCount} />
       <Switch>
         <Route exact path="/" component={Home} />
