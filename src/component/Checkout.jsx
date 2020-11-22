@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import items from '../items';
 import ItemCard from './ItemCard';
 import Summary from './Summary';
@@ -7,6 +7,14 @@ import '../style/checkout.scss';
 export default function Checkout(props) {
   const { cartItems } = props;
   console.log(cartItems);
+
+  useEffect(() => {
+    const originalTitle = document.title;
+    document.title = 'Checkout';
+    return () => {
+      document.title = originalTitle;
+    };
+  }, []);
 
   return (
     <div id="checkout">
@@ -30,7 +38,7 @@ export default function Checkout(props) {
           <p>Your Cart is Empty</p>
         </div>
       ) : (
-        <Summary cartItems={cartItems} reset={props.resetCart}/>
+        <Summary cartItems={cartItems} reset={props.resetCart} />
       )}
     </div>
   );

@@ -55,7 +55,6 @@ function App() {
       newCount += value;
     }
     setItemCount(newCount);
-    console.log(cartItems);
   }, [cartItems]);
   return (
     <Router basename={process.env.PUBLIC_URL + '/'}>

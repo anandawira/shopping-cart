@@ -18,7 +18,9 @@ export default function Header(props) {
 
   return (
     <header>
-      <h1>NSFW SHOP</h1>
+      <Link to="/">
+        <h1>NSFW SHOP</h1>
+      </Link>
       <nav>
         <ul>
           <li>
