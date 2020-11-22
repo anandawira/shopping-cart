@@ -6,7 +6,6 @@ import '../style/checkout.scss';
 
 export default function Checkout(props) {
   const { cartItems } = props;
-  console.log(cartItems);
 
   useEffect(() => {
     const originalTitle = document.title;
